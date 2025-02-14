@@ -55,7 +55,10 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		  fontFamily: {
+			titillium: ["Titillium Web", "sans-serif"], // Adiciona a fonte Titillium Web
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate")],
