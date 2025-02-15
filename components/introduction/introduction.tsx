@@ -31,7 +31,7 @@ export const Introduction = () => {
                             <span>GitHub</span>
                         </a>
 
-                        <a href="https://instagram.com/KaykSilva" aria-label="Instagram" className="flex items-center gap-2 text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                        <a href="https://instagram.com/Kayk.blr" aria-label="Instagram" className="flex items-center gap-2 text-gray-400 hover:text-black dark:hover:text-white transition-colors">
                             <FaInstagram size={24} />
                             <span>Instagram</span>
                         </a>
