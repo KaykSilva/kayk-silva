@@ -3,7 +3,9 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Ícones para o menu de hambúrguer
 import { ModeToggle } from '@/components/ui/dark-mode';
+import Image from 'next/image';
 
+import logo from "../../public/logo.jpg";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +17,14 @@ const Header = () => {
         <header className="shadow-md">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div>
-                    <img src="https://i.pinimg.com/736x/b1/ab/4b/b1ab4b6f79a484dedc6c4f1956daaee0.jpg" className='w-12 h-12 rounded-xl' />
+                    <Image
+                        src={logo}
+                        alt="Logo"
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 rounded-xl"
+                        priority
+                    />
                 </div>
 
                 {/* Menu para desktop */}
