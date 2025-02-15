@@ -15,7 +15,7 @@ const Header = () => {
         <header className="shadow-md">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div>
-                    <img src="https://i.pinimg.com/736x/de/de/18/dede18434733acab735462acc4a32d76.jpg" className='w-12 h-12 rounded-xl' />
+                    <img src="https://i.pinimg.com/736x/b1/ab/4b/b1ab4b6f79a484dedc6c4f1956daaee0.jpg" className='w-12 h-12 rounded-xl' />
                 </div>
 
                 {/* Menu para desktop */}
