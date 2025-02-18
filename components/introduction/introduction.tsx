@@ -3,6 +3,7 @@ import Image from "next/image";
 import mew from "../../public/mew.gif";
 import GitHubCalendar from 'react-github-calendar';
 import cais from "../../public/cais.png";
+import { Footer } from "@/components/footer/footer";
 
 
 export const Introduction = () => {
@@ -49,7 +50,7 @@ export const Introduction = () => {
             {/* Contributions Section */}
             <section className="container max-w-5xl rounded-lg p-4 sm:p-8 mt-20 ">
                 <div className="text-left">
-                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-titillium font-semibold text-gray-800 dark:text-gray-200 mb-6">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-titillium font-semibold text-gray-800 dark:text-gray-200 mb-6">
                         Contribuições
                     </h2>
                 </div>
@@ -62,15 +63,16 @@ export const Introduction = () => {
 
             {/* Work Experience Section */}
             <section className="container max-w-5xl rounded-lg p-4 sm:p-8 mt-20">
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-titillium font-semibold text-gray-800 dark:text-gray-200 mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-titillium font-semibold text-gray-800 dark:text-gray-200 mb-6">
                     Experiências de Trabalho
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                     {[
+
                         {
-                            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Instituto_Federal_do_Maranh%C3%A3o_-_Marca_Vertical_2015.svg/1192px-Instituto_Federal_do_Maranh%C3%A3o_-_Marca_Vertical_2015.svg.png",
-                            date: "Desenvolvedor Front-End 2022 - 2023",
-                            description: "Meu primeiro projeto pelo IFMA, desenvolvi um site para divulgar os resultados de uma pesquisa sobre Arranjos Produtivos Locais (APLs) em cidades do Maranhão que possuem campus do IFMA."
+                            image: "https://i.postimg.cc/FK7VC2zp/cais.png",
+                            date: "Desenvolvedor Front-End 2024 - Atualmente",
+                            description: "Atualmente, trabalho como desenvolvedor Front-End na startup DashMed, em colaboração com o CAIS HUB, no desenvolvimento de um sistema de Telemedicina para atendimentos de emergência e urgência, utilizando inteligência artificial para auxiliar no pré-diagnóstico e tratamentos."
                         },
                         {
                             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Instituto_Federal_do_Maranh%C3%A3o_-_Marca_Vertical_2015.svg/1192px-Instituto_Federal_do_Maranh%C3%A3o_-_Marca_Vertical_2015.svg.png",
@@ -78,19 +80,22 @@ export const Introduction = () => {
                             description: "Trabalhei como desenvolvedor Front-End em uma startup em parceria com a Fábrica de Inovação do IFMA - Campus Araioses e a Clínica Odontológica Biodonto."
                         },
                         {
-                            image: "https://i.postimg.cc/FK7VC2zp/cais.png",
-                            date: "Desenvolvedor Front-End 2024 - Atualmente",
-                            description: "Atualmente, trabalho como desenvolvedor Front-End na startup DashMed, em colaboração com o CAIS HUB, no desenvolvimento de um sistema de Telemedicina para atendimentos de emergência e urgência, utilizando inteligência artificial para auxiliar no pré-diagnóstico e tratamentos."
-                        }
+                            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Instituto_Federal_do_Maranh%C3%A3o_-_Marca_Vertical_2015.svg/1192px-Instituto_Federal_do_Maranh%C3%A3o_-_Marca_Vertical_2015.svg.png",
+                            date: "Desenvolvedor Front-End 2022 - 2023",
+                            description: "Meu primeiro projeto pelo IFMA, desenvolvi um site para divulgar os resultados de uma pesquisa sobre Arranjos Produtivos Locais (APLs) em cidades do Maranhão que possuem campus do IFMA."
+                        },
+
+
                     ].map((exp, index) => (
                         <div key={index} className="bg-gray-100 dark:bg-zinc-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">
-                            <img src={exp.image} alt="experience" className="w-full h-40 object-contain rounded-md mb-4 bg-white"  />
+                            <img src={exp.image} alt="experience" className="w-full h-40 object-contain rounded-md mb-4 bg-white" />
                             <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">{exp.date}</h3>
                             <p className="text-sm text-gray-600 dark:text-gray-400">{exp.description}</p>
                         </div>
                     ))}
                 </div>
             </section>
+            <Footer/>
         </main>
     );
 };
