@@ -65,7 +65,7 @@ export const Introduction = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-titillium font-semibold text-gray-800 dark:text-gray-200 mb-6">
                     Experiências de Trabalho
                 </h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {[
 
                         {
