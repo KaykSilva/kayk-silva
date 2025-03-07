@@ -2,7 +2,6 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import mew from "../../public/mew.gif";
 import GitHubCalendar from 'react-github-calendar';
-import cais from "../../public/cais.png";
 import { Footer } from "@/components/footer/footer";
 
 

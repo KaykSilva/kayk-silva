@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Footer } from "@/components/footer/footer";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -16,33 +17,26 @@ export default function Projects() {
                 </div>
             </section>
 
-            {/* Grid Section */}
+
             <section className="w-full rounded-lg p-4 sm:p-8 mt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {[
                         {
-                            image: "https://cdn.discordapp.com/attachments/785241143557488681/1341213147322646528/logo.png?ex=67b52d94&is=67b3dc14&hm=6eeee96d99b981b764670e84bc4761f8b6029788572e5e4af7c2a31d4dcf97d1&",
+                            image: "/dashmed.png",
                             title: "DashMed",
-                            description: "Um sistema de Telemedicina para atendimentos de emergência e urgência, utilizando inteligência artificial para auxiliar no pré-diagnóstico e tratamentos."
-                        },
-                        {
-                            image: "https://media.discordapp.net/attachments/785241143557488681/1341216688020131910/Group_2.png?ex=67b530e1&is=67b3df61&hm=9ec9eccf05e86dfeacbf0c862312a0de2e9ca0b0505214062070be58826e91eb&=&format=webp&quality=lossless&width=245&height=245",
-                            title: "OdontoEase",
-                            description: "Um sistema inteligente para gerencia de clínicas odontológicas de pequeno e médio porte."
-                        },
-                        {
-                            image: "https://i.pinimg.com/736x/b7/bf/8a/b7bf8aa19e5b7d1d23d7c94a4a45d2bf.jpg",
-                            title: "Ryo bot",
-                            description: "Um bot para Discord, oferecendo recursos de gerenciamento de servidores e diversas opções de entretenimento para a sua comunidade."
+                            description: "Um sistema de Telemedicina para atendimentos de emergência e urgência, utilizando inteligência artificial para auxiliar no pré-diagnóstico e tratamentos.",
+                            route: "/projects/dashmed",
                         },
                     ].map((exp, index) => (
-                        <div key={index} className="bg-gray-100 dark:bg-zinc-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform flex flex-col md:flex-row items-center md:items-start gap-4">
-                            <img src={exp.image} alt="experience" className="w-24 h-24 md:w-15 md:h-15 object-fill rounded-md bg-gray-600 p-2 bg-opacity-30" />
-                            <div className="flex-1">
-                                <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">{exp.title}</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">{exp.description}</p>
+                        <Link key={index} href={exp.route} className="block">
+                            <div className="bg-gray-100 dark:bg-zinc-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform flex flex-col md:flex-row items-center md:items-start gap-4 cursor-pointer">
+                                <img src={exp.image} alt={exp.title} className="w-24 h-24 md:w-15 md:h-15 object-fill rounded-md bg-gray-600 p-2 bg-opacity-30" />
+                                <div className="flex-1">
+                                    <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">{exp.title}</h3>
+                                    <p className="text-sm text-gray-600 dark:text-gray-400">{exp.description}</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </section>
