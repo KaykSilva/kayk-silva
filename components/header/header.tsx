@@ -33,8 +33,8 @@ const Header = () => {
                 <nav className="hidden md:flex space-x-8">
                     <a href="/" className="dark:text-white text-black hover:text-blue-500 font-titillium font-semibold hover:border-b-2 dark:hover:border-white transition-all duration-300">Home</a>
                     <a href="/projects" className="dark:text-white text-black hover:text-blue-500 font-titillium font-semibold hover:border-b-2 dark:hover:border-white transition-all duration-300">Projetos</a>
-                    <a href="#" className="dark:text-white text-black hover:text-blue-500 font-titillium font-semibold hover:border-b-2 dark:hover:border-white transition-all duration-300">Sobre</a>
-                    <a href="#" className="dark:text-white text-black hover:text-blue-500 font-titillium font-semibold hover:border-b-2 dark:hover:border-white transition-all duration-300">Contato</a>
+                    <a href="/about" className="dark:text-white text-black hover:text-blue-500 font-titillium font-semibold hover:border-b-2 dark:hover:border-white transition-all duration-300">Sobre</a>
+                    <a href="/contact" className="dark:text-white text-black hover:text-blue-500 font-titillium font-semibold hover:border-b-2 dark:hover:border-white transition-all duration-300">Contato</a>
                 </nav>
 
                 <ModeToggle />
@@ -52,8 +52,8 @@ const Header = () => {
                 <nav className="flex flex-col space-y-4 p-4 font-titillium font-semibold">
                     <a href="/" className="dark:text-white text-black hover:border-b-2 w-10 dark:hover:border-white transition-all duration-300">Home</a>
                     <a href="/projects" className="dark:text-white text-black hover:border-b-2 w-10 dark:hover:border-white transition-all duration-300">Projetos</a>
-                    <a href="#" className="dark:text-white text-black hover:border-b-2 w-12 dark:hover:border-white transition-all duration-300">Sobre</a>
-                    <a href="#" className="dark:text-white text-black hover:border-b-2 w-12 dark:hover:border-white transition-all duration-300">Contato</a>
+                    <a href="/about" className="dark:text-white text-black hover:border-b-2 w-12 dark:hover:border-white transition-all duration-300">Sobre</a>
+                    <a href="/contact" className="dark:text-white text-black hover:border-b-2 w-12 dark:hover:border-white transition-all duration-300">Contato</a>
                 </nav>
             </div>
         </header>

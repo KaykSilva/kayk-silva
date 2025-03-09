@@ -79,6 +79,19 @@ export default function Dashmed() {
 
                             <div className="flex items-center flex-row mb-4">
                                 <a
+                                    href="https://nodejs.org/pt"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center hover:text-blue-500 transition-all duration-300"
+                                >
+                                    <MdCircle className="mr-2" /> Node JS
+                                    <RxExternalLink className="ml-1" color="royalblue" />
+                                </a>
+                            </div>
+
+
+                            <div className="flex items-center flex-row mb-4">
+                                <a
                                     href="https://ant.design/"
                                     target="_blank"
                                     rel="noopener noreferrer"
