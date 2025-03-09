@@ -4,7 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 
 export default function About() {
     return (
-        <main className="flex-2 p-4 font-titillium font-semibold w-full pl-0 md:pl-24">
+        <main className="flex-1 p-4 font-titillium font-semibold w-full pl-0 md:pl-24">
             <section className="rounded-lg p-8 flex flex-col md:flex-row gap-8 mx-auto pt-20 justify-center items-center">
                 <div className="flex order-1 md:order-2 mr-0 md:mr-24 flex-col items-center">
                     <img
@@ -19,20 +19,21 @@ export default function About() {
                     >
                         Baixar Currículo <IoMdCodeDownload className="ml-2" size={20} />
                     </a>
-                    <div className="flex items-center direction-row">
+                    <div className="flex items-center direction-row mt-4">
                         <MdOutlineMail className="mr-2" /> kayksilva@outlook.de
                     </div>
-
                 </div>
 
-                <div className="flex-1 order-2 md:order-1 text-center md:text-left">
+                <div className="flex-1 order-2 md:order-1 text-left">
                     <h1 className="text-2xl sm:text-3xl md:text-5xl font-titillium font-semibold text-gray-800 dark:text-gray-200 mb-6 animate-fade-down animate-once text-left">
                         Eu sou Kayk Silva. Moro em Araioses, onde construo o futuro.
                     </h1>
                     <p className="text-md sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl text-left">
                         Sou um estudante de tecnologia autodidata e voltado para a carreira, especializado em desenvolvimento front-end e código aberto, atualmente cursando curso técnico em informática. Minha especialidade é construir aplicativos web interativos no lado do cliente. Trabalho principalmente com tecnologias como JavaScript, TypeScript, Next.js, React.Js, React Native e Node.js.
                     </p>
-                    <p className="mt-6 text-md sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl text-left">Acredito fortemente no aprendizado contínuo e na melhoria contínua, por isso tento o meu melhor para aprender em qualquer situação possível, desfavorável ou não.</p>
+                    <p className="mt-6 text-md sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl text-left">
+                        Acredito fortemente no aprendizado contínuo e na melhoria contínua, por isso tento o meu melhor para aprender em qualquer situação possível, desfavorável ou não.
+                    </p>
                 </div>
             </section>
 
