@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { Footer } from "@/components/footer/footer";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 
 export default function Projects() {
     return (
@@ -26,6 +25,18 @@ export default function Projects() {
                             title: "DashMed",
                             description: "Um sistema de Telemedicina para atendimentos de emergência e urgência, utilizando inteligência artificial para auxiliar no pré-diagnóstico e tratamentos.",
                             route: "/projects/dashmed",
+                        },
+                        {
+                            image: "/odonto-ease-logo.png",
+                            title: "OdontoEase",
+                            description: "OdontoEase: um sistema inteligente de gestão para clínicas odontológicas",
+                            route: "/projects/odonto-ease",
+                        },
+                        {
+                            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Instituto_Federal_do_Maranh%C3%A3o_-_Marca_Vertical_2015.svg/1192px-Instituto_Federal_do_Maranh%C3%A3o_-_Marca_Vertical_2015.svg.png",
+                            title: "Observatório Maranhense do Emprego e Produção (OMEP)",
+                            description: "Plataforma para a divulgação do resultado da pesquisa do Observatório Maranhense do Emprego e Produção (OMEP)",
+                            route: "/projects/omep",
                         },
                     ].map((exp, index) => (
                         <Link key={index} href={exp.route} className="block">
