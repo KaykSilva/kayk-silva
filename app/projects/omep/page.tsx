@@ -162,7 +162,7 @@ export default function Omep() {
 
                 <div className="mt-1">
                     <p className="dark:text-gray-400 text-gray-600 md:text-left text-left">
-                        Informações detalahadas sobre a região e os Arranjos produtivos locais (APLs)
+                        Informações detalhada sobre a região e os Arranjos produtivos locais (APLs)
 
                     </p>
                 </div>
