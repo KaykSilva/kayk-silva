@@ -29,7 +29,7 @@ export default function About() {
                         Eu sou Kayk Silva. Moro em Araioses, onde construo o futuro.
                     </h1>
                     <p className="text-md sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl text-left">
-                        Sou um estudante de tecnologia autodidata e voltado para a carreira, especializado em desenvolvimento front-end e código aberto, atualmente cursando curso técnico em informática. Minha especialidade é construir aplicativos web interativos no lado do cliente. Trabalho principalmente com tecnologias como JavaScript, TypeScript, Next.js, React.Js, React Native e Node.js.
+                        Sou um estudante de tecnologia autodidata e voltado para a carreira, especializado em desenvolvimento front-end e código aberto, atualmente graduando nem Análise e Desenvolvimento de Sistemas. Minha especialidade é construir aplicativos web interativos no lado do cliente. Trabalho principalmente com tecnologias como JavaScript, TypeScript, Next.js, React.Js, React Native e Node.js.
                     </p>
                     <p className="mt-6 text-md sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl text-left">
                         Acredito fortemente no aprendizado contínuo e na melhoria contínua, por isso tento o meu melhor para aprender em qualquer situação possível, desfavorável ou não.

@@ -24,7 +24,7 @@ export const Introduction = () => {
                         Desenvolvedor Web & Entusiasta de Tecnologia
                     </h1>
                     <p className="text-md sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
-                        Sou Kayk, um desenvolvedor frontend experiente, apaixonado por aprendizado contínuo e por criar soluções inovadoras para web e mobile.
+                        Sou Kayk, um desenvolvedor web experiente, apaixonado por aprendizado contínuo e por criar soluções inovadoras para web e mobile.
                     </p>
 
                     <div className="mt-6 flex flex-wrap justify-center md:justify-start items-center gap-4 cursor-pointer">
